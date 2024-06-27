@@ -1,0 +1,159 @@
+/* Estilos base */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87); /* Color de texto principal */
+  background-color: #ffffff; /* Color de fondo principal */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enlaces */
+
+a {
+  font-weight: 500;
+  color: #787880;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #a5a6b9;
+}
+
+/* Cuerpo */
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Títulos */
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+/* Botones */
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+button:hover {
+  background-color: #000;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Estilos para modo claro */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #fafafa;
+  }
+  a:hover {
+    color: #a39a9a;
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+  }
+}
+
+/* Estilos adicionales para gestión de PQRS */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #f3dbdb;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-section h2 {
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-section select,
+.form-section textarea,
+.form-section button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+.form-section textarea {
+  resize: vertical;
+}
+
+.form-section button {
+  background-color: #646cff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+  background-color: #535bf2;
+}
+
+.pqrs-list {
+  margin-bottom: 2rem;
+}
+
+.pqrs-list h2 {
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+
+.pqrs-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pqrs-list li {
+  background: #444;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
